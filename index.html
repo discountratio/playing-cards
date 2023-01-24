@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="vanilla-tilt.js" type="text/javascript" defer></script>
+
+    <script src="cardInfo.js" defer></script>
+
+    <link
+      rel="stylesheet"
+      href="styles.css
+    " />
+    <title>Deck of Cards</title>
+  </head>
+  <body>
+    <h2>Deck of Cards</h1>
+    <menu id="menu-button-container">
+      <h2>Menu</h2>
+      <div class="menu-button-div">
+        <button class="menu-button" id="button-new-deck">New Deck</button>
+        <button class="menu-button" id="button-sort-deck">Sort Deck</button>
+      <button class="menu-button" id="button-shuffle-deck">Shuffle Deck</button>
+      <button class="menu-button" id="button-show-deck">Show Deck</button>
+      </div>
+
+      <div class="menu-button-div">
+      <button class="menu-button" id="button-new-hand">New Hand</button>
+      <button class="menu-button" id="button-sort-hand">Sort Hand</button>
+      <button class="menu-button" id="button-draw-card">Draw Card</button>
+      </div>
+
+      <div class="menu-button-div">
+
+      <!-- <button class="menu-button" id="button-hide-deck">Hide Deck</button> -->
+      <button class="menu-button" id="button-show-discard">Show Discard</button>
+      </div>
+    </menu>
+
+    <menu id="info">
+      <h2>Info</h2>
+      <p>Next card: <span id="info-next-card"></span></p>
+      <p>Deck size: <span id="info-deck-size"></span></p>
+      <p>Hand size: <span id="info-hand-size"></span></p>
+      <p>Deck value: <span id="info-deck-value"></span></p>
+      <p>Hand value: <span id="info-hand-value"></span></p>
+      <p>Discard size: <span id="info-discard-size"></span></p>
+    </menu>
+
+    <section class="card-table">
+      <div class="card-display-container" id="hand-display-container"></div>
+      <div class="card-display-container" id="deck-display-container"></div>
+      <div class="card-display-container" id="discard-display-container"></div>
+    </section>
+  </body>
+</html>
